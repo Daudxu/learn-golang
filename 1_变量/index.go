@@ -1,6 +1,7 @@
-package basics
+package main
 
 import "fmt"
+
 //函数体外的全局变量要遵循闭包规则,不可以使用 := 或者 var c
 var a string
 var b int
@@ -13,6 +14,18 @@ func test() {
     var f = "just"
     
     fmt.Println(a)
+    // fmt.Printf(b)
     fmt.Println(e)
     fmt.Println(f)
+}
+
+func variableZeroValue() {
+    var a int
+    var s string
+    fmt.Printf("%d %q\n", a, s)
+}
+
+func main () {
+    test()
+    // fmt.Println("hello world")
 }
