@@ -1,4 +1,5 @@
 package main
+
 import "fmt"
 func main(){
     a := "hesitate"
@@ -19,4 +20,12 @@ func main(){
     fmt.Printf(b)
 
     fmt.Println(len(a))
+}
+
+func consts() {
+    const (
+        filename = "abc"
+    )
+
+    fmt.Println(filename)
 }
