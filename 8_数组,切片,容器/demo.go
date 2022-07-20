@@ -41,6 +41,16 @@ func demo6(){
 	fmt.Println("cap", cap(myNum))
 }
 
+func demo7(){
+	arr := [...]int{0,1,2,3,4,5,6,7}
+	s1 := arr[2:6]
+	s2 := s1[3:5]
+	s3 := append(s2, 10)
+	s4 := append(s3, 11)
+	s5 := append(s4, 12)
+	fmt.Println(s5)
+}
+
 func main() {
 	demo1()
 	demo2()
@@ -48,5 +58,6 @@ func main() {
 	demo4()
 	demo5()
 	demo6()
+	demo7()
 }
 
