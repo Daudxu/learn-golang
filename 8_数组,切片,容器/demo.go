@@ -26,10 +26,27 @@ func  demo4(){
 	}
 }
 
+func demo5(){
+	slice := make([]int, 5)
+	fmt.Println(slice)
+}
+
+func demo6(){
+	myStr := []string{"Jack", "Mark", "Nick"}
+    myNum := []int{10, 20, 30, 40}
+	fmt.Println(myStr)
+	fmt.Println(myNum)
+	fmt.Println(myNum[2:3])
+	fmt.Println("len", len(myNum))
+	fmt.Println("cap", cap(myNum))
+}
+
 func main() {
 	demo1()
 	demo2()
 	demo3()
 	demo4()
+	demo5()
+	demo6()
 }
 
